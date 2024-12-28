@@ -34,10 +34,6 @@ app.use(morgan("dev"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.get("/hello", (req, res) => {
-  res.send("Hello, World!");
-});
-
 // Define the routes
 app.use("/api/tasks", taskModule.routes);
 
