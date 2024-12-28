@@ -18,8 +18,6 @@ const cTask = {
 
   createTask: async (req, res) => {
     try {
-      console.log("fasdfasdfsadf")
-      console.log(req.body)
       const userDataSupabase = req.userDataSupabase;
       const { title, description, status } = req.body;
 
